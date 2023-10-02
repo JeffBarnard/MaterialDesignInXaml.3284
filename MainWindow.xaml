@@ -1,0 +1,18 @@
+﻿<Window x:Class="MaterialDesignInXaml._3284.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MaterialDesignInXaml._3284" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <materialDesign:DialogHost Identifier="RootDialog" CloseOnClickAway="True">
+            <materialDesign:DialogHost Identifier="NestedDialog" CloseOnClickAway="True">
+                <Grid>
+                    <Button Content="Open" Width="120" Height="50" Click="Button_Click" />
+                </Grid>
+            </materialDesign:DialogHost>
+        </materialDesign:DialogHost>
+    </Grid>
+</Window>
